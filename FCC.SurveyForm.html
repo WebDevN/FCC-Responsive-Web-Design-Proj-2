@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FCC Survey Form</title>
+    <link rel="stylesheet" href="FCC.SurveyForm.css">
+</head>
+
+<body>
+    <header>
+        <h1 id="title">The Survey Form YOU MUST FILL OUT</h1>
+        <h2>Thank you very much!</h2>
+    </header>
+    <main>
+        <p id="description">This is where you provide us with a lot of sensitive information about yourself that you
+            wouldn't
+            want us to
+            make public.</p>
+        <form id="survey-form" action="http://google.com" method="post">
+
+            <section id="yourname">
+                <label id="name-label" for="name"><strong>Your name:&nbsp;</strong></label>
+                <input type="text" size="40" name="yourname" id="name" placeholder="Harriet Mildew" required>
+            </section>
+
+            <section id="youremail">
+                <label id="email-label" for="email"><strong>Your email:&nbsp;</strong></label>
+                <input type="text" size="40" name="youremail" id="email" placeholder="you@HerPlace.org" required>
+            </section>
+
+            <section id="gender">
+                <p>What you think your gender is:&nbsp;</p>
+                <input type="radio" name="gender" id="genderM" value="Male">
+                <label for="genderM">Male</label>
+                <input type="radio" name="gender" id="genderF" value="Female">
+                <label for="genderF">Female</label>
+                <input type="radio" name="gender" id="genderO" value="other">
+                <label for="genderO">Other</label>
+            </section>
+
+            <section id="children">
+                <label id="number-label" for="number"><strong>How many offspring you have (0 -
+                        20):&nbsp;</strong></label>
+                <input type="number" size="2" name="yourchildren" id="number" min="0" max="20" placeholder="15">
+            </section>
+
+            <section id="politics">
+                <label for="politic"><strong>Your political position:&nbsp;</strong></label>
+                <select id="dropdown">
+                    <option value="republican">Republican</option>
+                    <option value="democrat">Democrat</option>
+                    <option value="independent">Independent</option>
+                    <option value="anarchist">Anarchist</option>
+                </select>
+            </section>
+
+            <section id="health">
+                <div id="health2">
+                    <p>Select all that apply:&nbsp;</p>
+                    <input type="checkbox" name="health" id="nothealthy" value="nohealth">
+                    <label for="nothealthy">Health is quite poor due to a number of bad habits.</label><br>
+                    <input type="checkbox" name="health" id="veryhealthy" value="goodhealth">
+                    <label for="veryhealthy">The epitome of health right here!</label><br>
+                    <input type="checkbox" name="health" id="donotknow" value="noclue">
+                    <label for="donotknow">Have no clue how healthy I am, but even if I did I wouldn't tell
+                        you!</label>
+                </div>
+            </section>
+
+            <section id="tellabout">
+                <label for="story"><strong>What else do you have to say for yourself?</strong></label>
+                <textarea name="story" id="story" cols="80" rows="20"></textarea>
+            </section>
+
+            <section id="buttons">
+                <input class="button" type="button"
+                    value="Please do not share this with all your business contacts...please!">
+                <button class="button" id="submit"><strong>HERE...HAVE MY SENSITIVE INFORMATION</strong></button>
+            </section>
+
+        </form>
+    </main>
+</body>
+
+</html>
